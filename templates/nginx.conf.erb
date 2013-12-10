@@ -1,0 +1,10 @@
+user <%= @user %>;
+worker_processes <%= @worker_processes %>;
+
+error_log  <%= @error_log %>;
+pid        <%= @pid %>;
+
+
+include events.conf;
+
+include http.conf;

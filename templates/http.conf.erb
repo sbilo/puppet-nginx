@@ -1,0 +1,10 @@
+http {
+	include		/etc/nginx/log.conf;
+	
+    default_type  			<%= @default_type %>;
+    keepalive_timeout  		<%= @keepalive_timeout %>;
+    sendfile        		<%= @sendfile %>;
+
+	include		/etc/nginx/mime.types;
+    include 	/etc/nginx/conf.d/*.conf;
+}
